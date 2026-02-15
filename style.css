@@ -76,6 +76,12 @@ h6 {
   --neutral-clr-medium: hsl(224, 23%, 55%);
   /* Neutral: Blue 950 */
   --neutral-clr-dark: hsl(223, 47%, 23%);
+
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-600: 3rem;
 }
 
 /* FOOTER */
