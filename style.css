@@ -62,6 +62,22 @@ h6 {
   text-wrap: balance;
 }
 
+/* GENERAL STYLES AND LAYOUT */
+:root {
+  /* Primary: Blue 100 */
+  --primary-clr-light: hsl(225, 100%, 94%);
+  /* Primary: Blue 700 */
+  --primary-clr-dark: hsl(245, 75%, 52%);
+  /* Accent: Purple 500 */
+  --accent-clr: hsl(245, 83%, 68%);
+  /* Neutral: Blue 50 */
+  --neutral-clr-light: hsl(225, 100%, 98%);
+  /* Neutral: Gray 600 */
+  --neutral-clr-medium: hsl(224, 23%, 55%);
+  /* Neutral: Blue 950 */
+  --neutral-clr-dark: hsl(223, 47%, 23%);
+}
+
 /* FOOTER */
 .attribution {
   font-size: 11px;
