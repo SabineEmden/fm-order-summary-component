@@ -102,10 +102,23 @@ h6 {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
   font-family: "Red Hat Display", sans-serif;
   font-size: var(--font-size-s);
   font-weight: 500;
   line-height: var(--line-height-l);
+  background-color: var(--primary-clr-light);
+  padding: var(--spacing-300);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding-bottom: var(--spacing-300);
 }
 
 /* FOOTER */
