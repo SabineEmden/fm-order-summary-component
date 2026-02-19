@@ -74,21 +74,21 @@ h6 {
 
 :root {
   /* Primary: Blue 100 */
-  --primary-clr-light: hsl(225, 100%, 94%);
+  --primary-clr-light: hsl(225 100% 94%);
   /* Primary: Blue 700 */
-  --primary-clr-dark: hsl(245, 75%, 52%);
+  --primary-clr-dark: hsl(245 75% 52%);
   /* Box shadow in Blue 700 with 19%  opacity*/
   --primary-shadow: hsl(245 75% 52% / 0.19);
   /* Accent: Purple 500 */
-  --accent-clr: hsl(245, 83%, 68%);
+  --accent-clr: hsl(245 83% 68%);
   /* Neutral: Blue 50 */
-  --neutral-clr-light: hsl(225, 100%, 98%);
+  --neutral-clr-light: hsl(225 100% 98%);
   /* Neutral: Gray 600 */
-  --neutral-clr-medium: hsl(224, 23%, 55%);
+  --neutral-clr-medium: hsl(224 23% 55%);
   /* Neutral: Blue 950 */
-  --neutral-clr-dark: hsl(223, 47%, 23%);
+  --neutral-clr-dark: hsl(223 47% 23%);
   /* Neutral: White */
-  --white: hsl(0, 0%, 100%);
+  --white: hsl(0 0% 100%);
   /* Shadow for card component */
   --card-shadow: hsl(228 87% 40% / 0.15);
 
