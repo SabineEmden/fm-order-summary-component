@@ -164,9 +164,16 @@ main {
   display: flex;
   gap: var(--spacing-200);
   align-items: center;
+  justify-content: space-between;
   background-color: var(--neutral-clr-light);
   padding: var(--spacing-200);
   border-radius: 0.75rem;
+}
+
+.plan-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
 }
 
 .plan-section img {
@@ -182,7 +189,7 @@ main {
   color: var(--primary-clr-dark);
   font-weight: 700;
   text-decoration: none;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .change:hover {
