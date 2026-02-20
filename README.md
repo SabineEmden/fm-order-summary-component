@@ -81,6 +81,7 @@ For future solutions to Frontend Mentor challenges, I will go back to using glob
 ### Useful resources
 
 - [What do you name color variables?](https://css-tricks.com/what-do-you-name-color-variables/) by Chris Coyier for CSS-Tricks - I'm not alone in my struggle with semantic color names. This brief article list a number of different ways to name CSS custom properties for colors, with more tips in the comments.
+- [Accessibility of the section element](https://www.scottohara.me/blog/2021/07/16/section.html) by Scott O'Hara - This article convinced me to follow the recommendation of the Frontend Mentor HTML report and use a `<section>` element for the card component.
 
 ## Author
 
