@@ -55,7 +55,7 @@ Users should be able to:
 
 For this solution, I declared more CSS custom properties (variables) with global scope than I had done in previous projects. I used them not only for colors, but also for font sizes, line-hight, and spacing.
 
-I chose semantic names for the color custom properties, describing the color's function, not it visually appearance:
+I chose semantic names for the color custom properties, describing the color's function, not its visually appearance:
 
 ```css
 /* Primary: Blue 100 */
