@@ -1,6 +1,6 @@
 # Frontend Mentor - Order summary card solution
 
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help me improve my coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -13,15 +13,20 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
 ### The challenge
+
+The brief for this challenge was to build out the order summary card component and get it looking as close to the design as possible, starting with the following assets:
+
+- Access to Figma design file with mobile, tablet, and desktop layouts
+- JPEG design files for mobile and desktop layouts
+- Style guide for fonts, colors, etc.
+- Optimized image assets
+- HTML file with pre-written content
 
 Users should be able to:
 
@@ -29,20 +34,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Screenshot of the order summary card solution in desktop layout](./screenshot.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site](https://sabineemden.github.io/fm-order-summary-component/)
 
 ## My process
 
@@ -50,72 +47,51 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Variable web fonts
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+For this solution, I declared more CSS custom properties (variables) with global scope than I had done in previous projects. I used them not only for colors, but also for font sizes, line-hight, and spacing.
 
-To see how you can add code snippets, see below:
+I chose semantic names for the color custom properties, describing the color's function, not it visually appearance:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+/* Primary: Blue 100 */
+--primary-clr-light: hsl(225 100% 94%);
+/* Primary: Blue 700 */
+--primary-clr-dark: hsl(245 75% 52%);
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+My goal for this was to make my code more maintainable. Colors or font sizes in the design can be changed by replacing the values of the custom properties without needing to make any other changes to the code.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Chris Coyier warns in his [CSS Custom Properties Guide](https://css-tricks.com/a-complete-guide-to-custom-properties/) for CSS Tricks:
+
+> Custom properties can make code easier to maintain because you can update one value and have it reflected in multiple places. Careful though, overdoing abstraction can make have the opposite effect and make code less understandable.
+
+Using the color names that are used in the Figma design file as custom properties makes the code more readable and my work easier translating the design into code. The added abstraction of using semantic color names makes the code less readable, and I had to refer to the list of property declarations a lot to pick the right color.
+
+For this particular project, I also didn't find any advantage in using custom properties for font sizes, line heights, and spacing. It didn't save me any lines of code, the need to change values for design updates is very hypothetical, and it didn't make writing the CSS code easier.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+For future solutions to Frontend Mentor challenges, I will go back to using global CSS custom properties for colors that reflect the color names in the design file and style guide. I will use additional custom properties only if there is a clear benefit to it.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-### AI Collaboration
-
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+- [What do you name color variables?](https://css-tricks.com/what-do-you-name-color-variables/) by Chris Coyier for CSS-Tricks - I'm not alone in my struggle with semantic color names. This brief article list a number of different ways to name CSS custom properties for colors, with more tips in the comments.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+I'm an aspiring web developer and a former chemist. What I bring from chemistry to software development is a systematic approach to problem solving and the perseverance to not give up easily.
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [SabineEmden](https://www.frontendmentor.io/profile/SabineEmden)
+- Personal Website - [Sabine Emden](https://www.sabineemden.com/)
+- Mastodon - [@sabineemden](https://social.tchncs.de/@sabineemden)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+This project uses Josh Comeau's [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/).
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+The font family in this project is [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display). The fonts are licensed under the [Open Font License](https://openfontlicense.org/open-font-license-official-text/).
