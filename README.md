@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/order-summary-component-o7VAYHAQcI)
 - [Live Site](https://sabineemden.github.io/fm-order-summary-component/)
 
 ## My process
